@@ -1,4 +1,0 @@
-﻿  Win32Analysis.cpp
-c:\users\42140\source\repos\win32analysis\win32analysis\win32analysis.cpp(117): warning C4477: “wprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“ATL::CString”
-c:\users\42140\source\repos\win32analysis\win32analysis\win32analysis.cpp(117): warning C4477: “wprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 2 拥有了类型“ATL::CString”
-  Win32Analysis.vcxproj -> C:\Users\42140\source\repos\Win32Analysis\Debug\Win32Analysis.exe
