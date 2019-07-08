@@ -182,6 +182,7 @@ bool CInject::OpcodeInject(char * pOpcode, unsigned int nSize)
 	return true;
 }
 
+/*dll注入*/
 bool CInject::DllInject(char *szDllPath)
 {
 	/*打开进程*/

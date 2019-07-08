@@ -99,6 +99,11 @@ public:
 	//解析重定位表
 	BOOL GetRelocationInfo(vector<RelocationInfo> & vec_RelInfo);
 
+	//获取TLS表
+	PIMAGE_TLS_DIRECTORY GetTLsDirectory();
+	
+	//获取延迟加载表
+	PIMAGE_DELAYLOAD_DESCRIPTOR GetDelayloadDirectory();
 
 
 

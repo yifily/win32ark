@@ -11,9 +11,15 @@
 #include "CInject.h"
 #include "CServer.h"
 #include "CPrivilege.h"
+#include "CSoftware.h"
 
 int main()
 {
+
+#pragma region  test
+
+
+
 	setlocale(LC_ALL, "chs");
 
 	//1.获取进程信息
@@ -104,7 +110,7 @@ int main()
 	//	wprintf_s(L"\t%s\n", i.m_Status);
 	//}
 
-	//8权限
+	//8.权限
 	//VPrivilegeAll info;
 	//CPrivilege Privliege;
 	//HANDLE handle = OpenProcess(PROCESS_ALL_ACCESS, FALSE /*20488*/);
@@ -121,5 +127,17 @@ int main()
 	//}
 	
 
+#pragma endregion
+	//9.软件信息
+	//CSoftware soft;
+	//soft.ShowSoftwareDir("..\\..\\..\\..\\");
+	//soft.UnInstallSoftware("..\\Debug\\File.exe");
+	//VSoftAll vs;
+	//soft.GetSoftwareList(&vs);
+	//for (auto i : vs)
+	//{
+	//	wprintf_s(L"%s\n", i.m_Name);
+	//	wprintf_s(L"\t%s\n", i.m_SoftUniPath);
+	//}
 
 }

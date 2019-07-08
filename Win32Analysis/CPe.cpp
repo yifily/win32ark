@@ -371,6 +371,19 @@ BOOL CPe::GetRelocationInfo(vector<RelocationInfo>& vec_RelInfo)
 	return 1;
 }
 
+PIMAGE_TLS_DIRECTORY CPe::GetTLsDirectory()
+{
+
+	DWORD dwRva = GetNtHeader()->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_TLS].VirtualAddress;
+	return (PIMAGE_TLS_DIRECTORY)(RvaToOfset(dwRva) + m_pbuff);
+}
+
+PIMAGE_DELAYLOAD_DESCRIPTOR CPe::GetDelayloadDirectory()
+{
+	DWORD dwRva = GetNtHeader()->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT].VirtualAddress;
+	return (PIMAGE_DELAYLOAD_DESCRIPTOR)(RvaToOfset(dwRva) + m_pbuff);
+}
+
 
 
 

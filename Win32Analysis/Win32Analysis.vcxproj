@@ -157,6 +157,7 @@
     <ClInclude Include="CPrivilege.h" />
     <ClInclude Include="CProcess.h" />
     <ClInclude Include="CServer.h" />
+    <ClInclude Include="CSoftware.h" />
     <ClInclude Include="CThread.h" />
     <ClInclude Include="CWindow.h" />
     <ClInclude Include="pch.h" />
@@ -169,6 +170,7 @@
     <ClCompile Include="CPrivilege.cpp" />
     <ClCompile Include="CProcess.cpp" />
     <ClCompile Include="CServer.cpp" />
+    <ClCompile Include="CSoftware.cpp" />
     <ClCompile Include="CThread.cpp" />
     <ClCompile Include="CWindow.cpp" />
     <ClCompile Include="pch.cpp">

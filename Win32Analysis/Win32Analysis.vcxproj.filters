@@ -72,6 +72,9 @@
     <ClInclude Include="CPrivilege.h">
       <Filter>源文件\权限管理</Filter>
     </ClInclude>
+    <ClInclude Include="CSoftware.h">
+      <Filter>源文件\软件信息</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -103,6 +106,9 @@
     </ClCompile>
     <ClCompile Include="CPrivilege.cpp">
       <Filter>源文件\权限管理</Filter>
+    </ClCompile>
+    <ClCompile Include="CSoftware.cpp">
+      <Filter>源文件\软件信息</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
